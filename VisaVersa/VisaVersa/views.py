@@ -8,4 +8,5 @@ def main(request):
 def reversed(request):
     user_text=request.GET['usertext']
     reversedtext=user_text[::-1]
-    return render(request, 'reversedtext.html', {'usertext':user_text, "reversedtext":reversedtext})
+    countwords=len(user_text.split())
+    return render(request, 'reversedtext.html', {'usertext':user_text, "reversedtext":reversedtext, 'countwords':str(countwords)})
