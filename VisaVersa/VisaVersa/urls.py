@@ -20,5 +20,6 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.main),
-    path('reverses/', views.reversed, name="reverse")
+    path('reverses/', views.reversed, name="reverse"),
+    path('telegram/', views.telegrammes, name='telegram')
 ]

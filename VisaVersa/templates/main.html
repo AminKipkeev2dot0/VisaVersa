@@ -12,5 +12,8 @@
         <textarea rows="10" calls='50' name="usertext"></textarea> <br> <br>
         <input type= 'submit' value='do it'>
     </form>
+    <form action="{% url 'telegram'%}">
+        <input type="submit" value="Sent message">
+    </form>
 </body>
 </html>
