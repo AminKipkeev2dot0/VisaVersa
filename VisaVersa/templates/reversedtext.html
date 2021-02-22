@@ -7,10 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Visa Versa aaa</h1>
-    <form action="{% url 'reverse'%}">
-        <textarea rows="10" calls='50' name="usertext"></textarea> <br> <br>
-        <input type= 'submit' value='do it'>
-    </form>
+    <h1>Original</h1>
+    {{usertext}}
+    <h1>Reversed </h1>
+    {{reversedtext}}
 </body>
 </html>
